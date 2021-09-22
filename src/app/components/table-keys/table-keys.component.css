@@ -1,0 +1,14 @@
+table{
+    border-collapse: collapse;
+    min-width: 400px;
+}
+.color-table{
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: 1px;
+    
+}
+
+.nombreCss{
+   text-align: left;
+}

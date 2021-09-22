@@ -1,0 +1,22 @@
+<div class="weatherCard">
+    <div class="card"> <span class="icon"><img class="img-fluid" src='https://openweathermap.org/img/wn/{{this.weatherData.weather[0].icon}}@2x.png' /></span>
+        <div class="title">
+            <p>{{weatherData.name}}</p>
+        </div>
+        <div class="temp">{{weatherData.main.temp}}<sup>&deg;</sup></div>
+        <div class="row">
+            <div class="col-4">
+                <div class="header">General</div>
+                <div class="value">{{weatherData.weather[0].main}}</div>
+            </div>
+            <div class="col-4">
+                <div class="header">Humedad</div>
+                <div class="value">{{weatherData.main.humidity}}</div>
+            </div>
+            <div class="col-4">
+                <div class="header">Presion</div>
+                <div class="value">{{weatherData.main.pressure}}</div>
+            </div>
+        </div>
+    </div>
+</div>

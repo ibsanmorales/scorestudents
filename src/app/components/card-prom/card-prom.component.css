@@ -1,0 +1,32 @@
+.card {
+    background-color:whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 180px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .recordMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  .cardRecord{
+    font-size: 52px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 15px 0 15px; 
+  }
+  .cardNombre{
+      font-size: 14px;
+      font-weight: 200;
+      color: black;
+  }

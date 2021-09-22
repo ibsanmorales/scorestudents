@@ -1,0 +1,41 @@
+<main>
+    <div class="inputExcel">
+        <label for="file"></label>
+        <input
+        class="inputLoad" 
+        type="file"
+        accept=".xlsx, .xls, .csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+        id="file"
+        (change)="handleFileInput($event)">
+        <button class="btn btn-success" (click)="chargeinfo()">
+            Cargar
+        </button>      
+    </div>
+    <div class="dashboard"  *ngIf="dataexcel.length">
+        <div class="cardsProm" >
+            <app-card-prom [dataCard]="view_max" ></app-card-prom>
+            <app-card-prom [dataCard]="view_min" ></app-card-prom>
+            <app-card-prom [dataCard]="view_avge_general"></app-card-prom> 
+        </div>
+        <div >
+            <app-graphic-bar [dataStudent]="dataexcel" ></app-graphic-bar>
+        </div>
+    </div>
+    <div class="keyStudent" *ngIf="dataexcel.length">
+        <div class="alertTravel">
+        <div class="container travel">
+            <div class="form-floating">
+                <input type="number" class="form-control" id="floatingInput" placeholder="0" min="0" [(ngModel)]="numberTravel">
+                <label for="floatingInput">Recorrimiento Clave</label>
+            </div>
+            <button type="button" class="btn btn-light"  (click)="generate()">Generar</button>
+        </div>
+        <label *ngIf="!isInteger" style="color: red; margin-left: 30px;">Ingrese numero Entero</label>
+        </div>
+        <div class="travel">
+            <app-table-keys [dataKeyStds]="dataKeys"></app-table-keys>
+        </div>
+    </div>
+
+</main>
+
