@@ -11,7 +11,7 @@
             Cargar
         </button>      
     </div>
-    <div class="dashboard"  *ngIf="dataexcel.length">
+    <div id="dashboard"  *ngIf="dataexcel.length">
         <div class="cardsProm" >
             <app-card-prom [dataCard]="view_max" ></app-card-prom>
             <app-card-prom [dataCard]="view_min" ></app-card-prom>

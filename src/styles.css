@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+:root {
+  --main-color: #e6f0fa;
+  --footer-color: #5885AF;
+  --text-color: #2d2d2d;
+  --table-color:whitesmoke;
+}
+
+
 * {
     box-sizing: border-box;
   }
@@ -30,22 +38,21 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
-    background: #e6f0fa;
+    background: var(--main-color);
   }
   
   
   app-body-cal{
     order:3;
     flex: 1;
-    min-height:500px;
-    background: #e6f0fa;
+    background: var(--main-color);;
   }
   
   app-footer {
     order:5;
     min-height:80px;
     flex:0 1 100%;
-    background:#5885AF;
+    background: var(--footer-color);
   }
 
   @media (max-width: 768px) {

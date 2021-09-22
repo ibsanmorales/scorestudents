@@ -3,7 +3,7 @@ table{
     min-width: 400px;
 }
 .color-table{
-    background-color: whitesmoke;
+    background-color: var(--table-color);
     border: none;
     box-shadow: 1px;
     
